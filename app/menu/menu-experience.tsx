@@ -202,7 +202,7 @@ export function MenuExperience() {
                 const content = (
                   <>
                     {item.image && (
-                      <span className="dm-thumb"><img src={img(item.image, 240)} alt="" loading="lazy" /></span>
+                      <span className={`dm-thumb ${item.product ? "is-product" : ""}`}><img src={img(item.image, 240)} alt="" loading="lazy" /></span>
                     )}
                     <span className="dm-name">
                       <strong>{item.name}</strong>
@@ -236,7 +236,7 @@ export function MenuExperience() {
       {selected && (
         <div className="dm-sheet" role="dialog" aria-modal="true" aria-label={selected.item.name} onClick={close}>
           <div className="dm-sheet-card" onClick={(event) => event.stopPropagation()}>
-            <div className="dm-sheet-img">
+            <div className={`dm-sheet-img ${selected.item.product ? "is-product" : ""}`}>
               <img src={img(selected.item.image ?? selected.category.image, 1100)} alt={selected.item.name} />
             </div>
             <div className="dm-sheet-copy">

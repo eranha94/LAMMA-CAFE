@@ -12,6 +12,8 @@ export type MenuItem = {
   name: string;
   price: Price;
   image?: string;
+  /** Packshot on a white background (cans, bottles): shown whole, not cropped. */
+  product?: boolean;
   note?: string;
 };
 
@@ -35,6 +37,9 @@ export const groups: { id: MenuGroup; label: string }[] = [
 ];
 
 const unsplash = (id: string) => `https://images.unsplash.com/photo-${id}`;
+// Official product photos (manufacturer packshots, via Shufersal's image CDN).
+const packshot = (file: string) =>
+  `https://res.cloudinary.com/shufersal/image/upload/f_auto,q_auto,w_600/v1551800922/prod/product_images/products_large/${file}`;
 
 const one = (value: number): Price => ({ kind: "single", value });
 const size = (small: number, large: number): Price => ({ kind: "pair", labels: ["קטן", "גדול"], values: [small, large] });
@@ -186,15 +191,15 @@ export const menu: MenuCategory[] = [
     subtitle: "משהו קטן ליד הרגע שלכם",
     image: unsplash("1629654613528-5d0a2e4166de"),
     items: [
-      { name: "מים", price: one(7), image: unsplash("1616118132534-381148898bb4") },
-      { name: "סודה", price: one(8), image: unsplash("1781833685964-2ad1d45452a7") },
-      { name: "XL", price: one(8), image: unsplash("1727060594253-db908d19015a") },
-      { name: "XL TEN", price: one(8), image: unsplash("1657310217322-0ed7c60d4354") },
-      { name: "ספרייט", price: one(10), image: unsplash("1621330716555-5cad596c4562") },
-      { name: "קולה", price: one(10), image: unsplash("1700328971815-854758899c06") },
-      { name: "קולה זירו", price: one(10), image: unsplash("1517959105821-eaf2591984ca") },
-      { name: "תות בננה", price: one(12), image: unsplash("1579954115545-a95591f28bfc") },
-      { name: "ענבים", price: one(12), image: unsplash("1474722883778-792e7990302f") },
+      { name: "מים", price: one(7), image: packshot("DHE34_L_P_688381_1.png"), product: true },
+      { name: "סודה", price: one(8), image: packshot("VEV46_L_P_7290019153504_1.png"), product: true },
+      { name: "XL", price: one(8), image: packshot("EKJ44_L_P_5906485301012_1.png"), product: true },
+      { name: "XL TEN", price: one(8), image: packshot("AKY48_L_P_5902198160403_1.png"), product: true },
+      { name: "ספרייט", price: one(10), image: packshot("XGQ32_L_P_7290110110703_1.png"), product: true },
+      { name: "קולה", price: one(10), image: packshot("YFR48_L_P_7290011017866_1.png"), product: true },
+      { name: "קולה זירו", price: one(10), image: packshot("YFY46_L_P_7290011017873_1.png"), product: true },
+      { name: "תות בננה", price: one(12), image: packshot("YSI26_L_P_1247723_1.png"), product: true },
+      { name: "ענבים", price: one(12), image: packshot("VOV54_L_P_7290019153764_1.png"), product: true },
     ],
   },
   {
@@ -289,6 +294,6 @@ export const heroImage = unsplash("1541167760496-1628856ab772");
 
 /** Sized, compressed Unsplash URL. Local images (starting with "/") are returned as-is. */
 export function img(src: string, width: number) {
-  if (src.startsWith("/")) return src;
+  if (!src.startsWith("https://images.unsplash.com/")) return src;
   return `${src}?auto=format&fit=crop&w=${width}&q=72`;
 }
