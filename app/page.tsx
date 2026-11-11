@@ -60,7 +60,7 @@ export default function Home() {
             מקום בלי גיל, עם אווירה צעירה, קפה שמכינים באהבה ורגעים שנשארים איתכם הרבה אחרי שהכוס מתרוקנת.
           </p>
           <div className="hero-actions hero-entry hero-delay-three">
-            <a className="button button-ink" href="#menu">לפתיחת התפריט <Arrow /></a>
+            <a className="button button-ink" href="/menu">לפתיחת התפריט <Arrow /></a>
             <a className="quiet-link" href="#story">להכיר את LAMMA <span>↓</span></a>
           </div>
           <div className="hero-status hero-entry hero-delay-three"><OpenStatus /></div>
@@ -141,12 +141,12 @@ export default function Home() {
           <h2>מה בא לכם<br /><em>עכשיו?</em></h2>
           <p>חם או קר, מתוק או מלוח, משהו קטן ליד או עצירה של ממש — התפריט שלנו מחכה לכם.</p>
           <div className="menu-tags" aria-label="קטגוריות בתפריט">
-            <span>קפה</span><span>קרים</span><span>מאפים</span><span>כריכים</span><span>קינוחים</span>
+            <span>קפה חם</span><span>קרים ואייסים</span><span>מוחיטו וסחוטים</span><span>מאפים</span><span>קינוחים</span>
           </div>
-          <a className="button button-ink" href="/media/menu-qr.svg" target="_blank" rel="noreferrer">לצפייה בתפריט המלא <Arrow /></a>
+          <a className="button button-ink" href="/menu">לתפריט הדיגיטלי <Arrow /></a>
         </div>
 
-        <a className="menu-card" href="https://qr.scan.page/uploads/pdf/nG2OnE_521c89a281db50d0.pdf" target="_blank" rel="noreferrer" data-reveal aria-label="פתיחת התפריט המלא">
+        <a className="menu-card" href="/menu" data-reveal aria-label="פתיחת התפריט הדיגיטלי">
           <span className="menu-card-top">LAMMA MENU <b>↙</b></span>
 
           <div className="qr-window">
@@ -190,7 +190,7 @@ export default function Home() {
       <footer>
         <div className="footer-brand"><img src="/brand/logo-horizontal-cream.svg" alt="LAMMA Cafe" /><span>COFFEE · FOOD · MOMENTS</span></div>
         <div className="footer-message"><span>תודה שעצרתם אצלנו.</span><strong>נשמח לראות אתכם שוב.</strong></div>
-        <div className="footer-links"><a href="tel:+972524394885">052-439-4885</a><a href="#menu">התפריט</a><a href="#home">חזרה למעלה ↑</a></div>
+        <div className="footer-links"><a href="tel:+972524394885">052-439-4885</a><a href="/menu">התפריט</a><a href="#home">חזרה למעלה ↑</a></div>
         <small>© 2026 LAMMA CAFE · ALL RIGHTS RESERVED</small>
       </footer>
 
