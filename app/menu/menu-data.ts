@@ -191,8 +191,8 @@ export const menu: MenuCategory[] = [
     subtitle: "משהו קטן ליד הרגע שלכם",
     image: unsplash("1629654613528-5d0a2e4166de"),
     items: [
-      { name: "מים", price: one(7), image: packshot("DHE34_L_P_688381_1.png"), product: true },
-      { name: "סודה", price: one(8), image: packshot("VEV46_L_P_7290019153504_1.png"), product: true },
+      { name: "מים", price: one(7), image: packshot("PXR22_L_P_2331490_1.png"), product: true },
+      { name: "סודה", price: one(8), image: packshot("WFQ68_L_P_7290017888729_1.png"), product: true },
       { name: "XL", price: one(8), image: packshot("EKJ44_L_P_5906485301012_1.png"), product: true },
       { name: "XL TEN", price: one(8), image: packshot("AKY48_L_P_5902198160403_1.png"), product: true },
       { name: "ספרייט", price: one(10), image: packshot("XGQ32_L_P_7290110110703_1.png"), product: true },
