@@ -79,7 +79,6 @@ export const menu: MenuCategory[] = [
     subtitle: "טעמים שמזמינים לעצור עוד רגע",
     image: unsplash("1570968915860-54d5c301fa9f"),
     items: [
-      { name: "אוראיו", price: size(16, 18), image: unsplash("1619158401201-8fa932695178") },
       { name: "קרמל מלוח", price: size(15, 17), image: unsplash("1772519597624-cd5284f318c4") },
       { name: "פסטצ׳יו", price: size(15, 17), image: unsplash("1729869257061-dec08b3747bd") },
       { name: "צ׳אי", price: one(22), image: unsplash("1693302050215-66ae33076745") },
@@ -175,12 +174,12 @@ export const menu: MenuCategory[] = [
     image: unsplash("1600271886742-f049cd451bba"),
     items: [
       { name: "תפוזים", price: jug(20, 46), image: unsplash("1697399075538-1087356c81d8") },
-      { name: "תפוגזר", price: jug(18, 46), image: unsplash("1618046364546-81e9d03d39a6") },
+      { name: "תפוגזר", price: jug(20, 46), image: unsplash("1618046364546-81e9d03d39a6") },
       { name: "תפוחים", price: jug(20, 46), image: unsplash("1605199910378-edb0c0709ab4") },
       { name: "תפוחגזר", price: one(21), image: unsplash("1628961915805-4c92c885ce61") },
       { name: "תפוח סלק", price: one(23), image: unsplash("1757597738356-11d378869593") },
       { name: "תפוח סלק וג׳נג׳ר", price: one(25), image: unsplash("1500291161618-747dee2ab16c") },
-      { name: "גזר", price: one(19), image: unsplash("1528556860752-2a6a19a285a3") },
+      { name: "גזר", price: one(18), image: unsplash("1528556860752-2a6a19a285a3") },
     ],
   },
   {
