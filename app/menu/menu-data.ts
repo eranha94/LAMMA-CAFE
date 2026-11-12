@@ -244,7 +244,7 @@ export const menu: MenuCategory[] = [
     items: [
       { name: "רד ולווט", price: one(38), image: unsplash("1779885580469-28385974ca80") },
       { name: "סופלה", price: one(43), image: unsplash("1626125323072-bc20d2674d9e") },
-      { name: "סן סבסטיאן", price: one(45), image: unsplash("1635327173758-85badf17f995") },
+      { name: "סן סבסטיאן", price: one(45), image: unsplash("1635327173758-85badf17f995"), note: "תוספת שוקולד +2 ₪ · תוספת פיסטוק +2 ₪" },
     ],
   },
   {
