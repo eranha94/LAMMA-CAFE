@@ -21,7 +21,6 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
-  other: { "codex-preview": "development" },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

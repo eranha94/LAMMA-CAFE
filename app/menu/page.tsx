@@ -51,6 +51,7 @@ export default function MenuPage() {
         <div>
           <a href="https://wa.me/972524394885" target="_blank" rel="noreferrer">WhatsApp ↙</a>
           <Link href="/">חזרה לאתר</Link>
+          <Link href="/accessibility">הצהרת נגישות</Link>
         </div>
       </div>
     </main>
