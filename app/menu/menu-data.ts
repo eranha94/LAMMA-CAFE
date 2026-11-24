@@ -90,7 +90,7 @@ export const menu: MenuCategory[] = [
     group: "cold",
     title: "קפה ומשקאות קרים",
     english: "ICED COFFEE",
-    subtitle: "קרים מרעננים ומדוייקים לכל שעה",
+    subtitle: "קרים מרעננים ומדויקים לכל שעה",
     image: unsplash("1461023058943-07fcbe16d735"),
     items: [
       { name: "קפה קר", price: size(16, 18), image: unsplash("1517701550927-30cf4ba1dba5") },
@@ -192,8 +192,8 @@ export const menu: MenuCategory[] = [
     items: [
       { name: "מים", price: one(7), image: packshot("PXR22_L_P_2331490_1.png"), product: true },
       { name: "סודה", price: one(8), image: packshot("WFQ68_L_P_7290017888729_1.png"), product: true },
-      { name: "XL", price: one(8), image: packshot("EKJ44_L_P_5906485301012_1.png"), product: true },
-      { name: "XL TEN", price: one(8), image: packshot("AKY48_L_P_5902198160403_1.png"), product: true },
+      { name: "XL", price: one(8), image: packshot("EKJ44_L_P_5906485301012_1.png"), product: true, note: "משקה אנרגיה" },
+      { name: "XL TEN", price: one(8), image: packshot("AKY48_L_P_5902198160403_1.png"), product: true, note: "משקה אנרגיה דל קלוריות" },
       { name: "ספרייט", price: one(10), image: packshot("XGQ32_L_P_7290110110703_1.png"), product: true },
       { name: "קולה", price: one(10), image: packshot("YFR48_L_P_7290011017866_1.png"), product: true },
       { name: "קולה זירו", price: one(10), image: packshot("YFY46_L_P_7290011017873_1.png"), product: true },

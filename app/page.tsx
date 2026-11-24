@@ -102,7 +102,7 @@ export default function Home() {
 
         <div className="story-film" data-reveal>
           <StoryVideo />
-          <div className="film-caption"><b>הסיפור של LAMMA</b><span>00:29 דקות · עם סאונד</span></div>
+          <div className="film-caption"><b>הסיפור של LAMMA</b><span>29 שניות · עם סאונד</span></div>
         </div>
       </section>
 
@@ -176,7 +176,7 @@ export default function Home() {
           ))}
         </div>
 
-        <a className="instagram-card" href="/media/instagram-qr.svg" target="_blank" rel="noreferrer" data-reveal>
+        <a className="instagram-card" href="https://scan.page/xHOd9c" target="_blank" rel="noreferrer" data-reveal>
           <div className="instagram-qr"><img src="/media/instagram-qr.svg" alt="קוד QR לאינסטגרם של LAMMA" /></div>
           <div><span>FOLLOW THE MOMENTS</span><strong>עקבו אחרינו<br />באינסטגרם ↙</strong></div>
         </a>
@@ -190,7 +190,7 @@ export default function Home() {
       <footer>
         <div className="footer-brand"><img src="/brand/logo-horizontal-cream.svg" alt="LAMMA Cafe" /><span>COFFEE · FOOD · MOMENTS</span></div>
         <div className="footer-message"><span>תודה שעצרתם אצלנו.</span><strong>נשמח לראות אתכם שוב.</strong></div>
-        <div className="footer-links"><a href="tel:+972524394885">052-439-4885</a><a href="/menu">התפריט</a><a href="#home">חזרה למעלה ↑</a></div>
+        <div className="footer-links"><a href="tel:+972524394885">052-439-4885</a><a href="/menu">התפריט</a><a href="/accessibility">הצהרת נגישות</a><a href="#home">חזרה למעלה ↑</a></div>
         <small>© 2026 LAMMA CAFE · ALL RIGHTS RESERVED</small>
       </footer>
 
